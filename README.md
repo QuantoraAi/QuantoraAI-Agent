@@ -1,15 +1,15 @@
-# Phasma AI 
+# Quantora AI 
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/your-org/phasma-ai/ci-cd.yaml?branch=main)](https://github.com/your-org/phasma-ai/actions)
-[![Release](https://img.shields.io/github/v/release/your-org/phasma-ai?include_prereleases)](https://github.com/your-org/phasma-ai/releases)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/your-org/Quantora-ai/ci-cd.yaml?branch=main)](https://github.com/your-org/Quantora-ai/actions)
+[![Release](https://img.shields.io/github/v/release/your-org/Quantora-ai?include_prereleases)](https://github.com/your-org/Quantora-ai/releases)
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Documentation](https://img.shields.io/badge/Docs-phasma.ai-blue)](https://docs.phasma.ai)
+[![Documentation](https://img.shields.io/badge/Docs-Quantora.ai-blue)](https://docs.Quantora.ai)
 
 **Autonomous agents with dynamic orchestration enabling real-time R&D, coding & API automation via decentralized collaboration.**
 
-[Phasma AI Website](https://phasmaai.com/)
+[Quantora AI Website](https://Quantoraai.com/)
 
-📢 [Twitter](https://twitter.com/PhasmaAILAB)  
+📢 [Twitter](https://twitter.com/QuantoraAILAB)  
 
 ##  Core Capabilities
 
@@ -92,11 +92,11 @@ graph TD
 ### Installation
 ```
 # Add Helm repo
-helm repo add phasma https://charts.phasma.ai
+helm repo add Quantora https://charts.Quantora.ai
 
 # Install core components
-helm install phasma-core phasma/phasma \
-  --namespace phasma-system \
+helm install Quantora-core Quantora/Quantora \
+  --namespace Quantora-system \
   --create-namespace \
   --set global.enableGPU=true \
   --set compliance.gdpr.enabled=true
@@ -126,7 +126,7 @@ autoscaling:
 ##  Usage Examples
 ### Start Research Agent
 ```
-from phasma.sdk import AgentSession
+from Quantora.sdk import AgentSession
 
 async with AgentSession(policy="research") as session:
     report = await session.execute(
@@ -142,7 +142,7 @@ async with AgentSession(policy="research") as session:
 ### Deploy Workflow
 ```
 kubectl apply -f - <<EOF
-apiVersion: orchestration.phasma.ai/v1
+apiVersion: orchestration.Quantora.ai/v1
 kind: CognitiveWorkflow
 metadata:
   name: market-analysis
@@ -159,7 +159,7 @@ EOF
 ## Contributing
 ### Development Setup
 ```
-git clone https://github.com/your-org/phasma-ai.git
+git clone https://github.com/your-org/Quantora-ai.git
 make init-dev # Installs pre-commit, dependency checkers
 make proto-gen # Generates gRPC/protobuf stubs
 ```
